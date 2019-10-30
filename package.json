@@ -1,22 +1,48 @@
 {
-  "name": "eleport",
-  "version": "1.0.0",
+  "name": "eTrial",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "rebuild": "./node_modules/.bin/electron-rebuild",
-    "build": "electron-builder --win"
+    "build": "electron-builder --win",
+    "build-p": "electron-builder --win -p always"
   },
   "keywords": [],
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xflihaibo/window-port.git"
+  },
   "license": "ISC",
   "dependencies": {
+    "electron-store": "^5.0.0",
     "serialport": "^7.1.5"
   },
   "devDependencies": {
     "electron": "^6.0.12",
     "electron-builder": "^21.2.0",
     "electron-rebuild": "^1.8.6"
+  },
+  "build": {
+    "appId": "eTrial",
+    "productName":"eTrial硬件对接评估",
+    "mac": {
+      "category": "your.app.category.type",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        "msi",
+        "nsis"
+      ],
+      "icon": "static/icon/icon.ico",
+      "artifactName": "${productName}-Web-Setup-${version}.${ext}",
+      "publisherName": "Taimei"
+    }
   }
 }
