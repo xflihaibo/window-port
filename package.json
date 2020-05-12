@@ -1,5 +1,5 @@
 {
-  "name": "eTrial",
+  "name": "eTxxxx",
   "version": "1.0.1",
   "description": "",
   "main": "main.js",
@@ -42,7 +42,7 @@
       ],
       "icon": "static/icon/icon.ico",
       "artifactName": "${productName}-Web-Setup-${version}.${ext}",
-      "publisherName": "Taimei"
+      "publisherName": "xxxxxx"
     }
   }
 }
